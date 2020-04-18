@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "236401157796",
+    "firebase_url": "https://mutabaah-amal-hi.firebaseio.com",
+    "project_id": "mutabaah-amal-hi",
+    "storage_bucket": "mutabaah-amal-hi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236401157796:android:096dad2d5db489366c2831",
+        "android_client_info": {
+          "package_name": "com.example.mutabaahamal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236401157796-mq4v0jng5l9g2aup6r9ueqmkukevluec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtvs04seT_gJ2OuZ1OWwC-FNx67FzfcEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236401157796-mq4v0jng5l9g2aup6r9ueqmkukevluec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mutabaahamal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Usrah24" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6165453270461404~3252016272"/>
+        <activity android:name=".Usrah23" />
+        <activity android:name=".Usrah22" />
+        <activity android:name=".Usrah21" />
+        <activity android:name=".Usrah20" />
+        <activity android:name=".Usrah19" />
+        <activity android:name=".Usrah18" />
+        <activity android:name=".Usrah17" />
+        <activity android:name=".Usrah16" />
+        <activity android:name=".Usrah15" />
+        <activity android:name=".Usrah14" />
+        <activity android:name=".Usrah13" />
+        <activity android:name=".Usrah12" />
+        <activity android:name=".Usrah11" />
+        <activity android:name=".Usrah10" />
+        <activity android:name=".Usrah9" />
+        <activity android:name=".Usrah8" />
+        <activity android:name=".Usrah7" />
+        <activity android:name=".Usrah6" />
+        <activity android:name=".Usrah5" />
+        <activity android:name=".Usrah4" />
+        <activity android:name=".Usrah3" />
+        <activity android:name=".Usrah2" />
+        <activity android:name=".Usrah1" />
+        <activity android:name=".AmalanDetail" />
+        <activity android:name=".FadhilatAmalan" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".UpdateUsrah" />
+        <activity android:name=".AmalanList"/>
+        <activity android:name=".Book11" />
+        <activity android:name=".Book10" />
+        <activity android:name=".Book9" />
+        <activity android:name=".Book8" />
+        <activity android:name=".Book7" />
+        <activity android:name=".Book6" />
+        <activity android:name=".Book5" />
+        <activity android:name=".Book4" />
+        <activity android:name=".Book3" />
+        <activity android:name=".Book2" />
+        <activity android:name=".Book1" />
+        <activity android:name=".Pdf" />
+        <activity android:name=".UpdateAmalan" />
+        <activity android:name=".Onboarding" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

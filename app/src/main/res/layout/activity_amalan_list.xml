@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".AmalanList">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:src="@drawable/gambarlist"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6165453270461404/3081513938">
+    </com.google.android.gms.ads.AdView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_marginBottom="10dp"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/colorAccent"
+        app:fab_addButtonPlusIconColor="@android:color/black"
+        app:fab_labelStyle="@style/customfab"
+        >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@android:color/white"
+            app:fab_icon="@drawable/mainlogo"
+            app:fab_size="normal"
+            android:id="@+id/action1"
+            app:fab_title="Mutabaah Amal"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@android:color/white"
+            app:fab_icon="@drawable/mainlogo"
+            app:fab_size="normal"
+            android:id="@+id/action2"
+            app:fab_title="Fadhilat Amalan"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@android:color/white"
+            app:fab_icon="@drawable/mainlogo"
+            app:fab_size="normal"
+            android:id="@+id/action3"
+            app:fab_title="Pdf Tepilih"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@android:color/white"
+            app:fab_icon="@drawable/mainlogo"
+            app:fab_size="normal"
+            android:id="@+id/action4"
+            app:fab_title="Update Amalan "/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@android:color/white"
+            app:fab_icon="@drawable/mainlogo"
+            app:fab_size="normal"
+            android:id="@+id/action5"
+            app:fab_title="Update Usrah"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@android:color/white"
+            app:fab_icon="@drawable/mainlogo"
+            app:fab_size="normal"
+            android:id="@+id/action6"
+            app:fab_title="About us "/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@drawable/buttonhijau"
+        app:itemTextColor="@drawable/select"
+        app:itemIconTint="@drawable/select"
+        app:menu="@menu/menu_navigation"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_above="@+id/bottomtext"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/bottomtext"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/t3"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/t1"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:paddingEnd="10dp"
+            android:text="Fadhail"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:text="PDF"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:layout_toLeftOf="@id/t5"
+            android:layout_toRightOf="@+id/t1"
+            android:text="Update"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:text="Other"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
